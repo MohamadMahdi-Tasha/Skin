@@ -48,6 +48,14 @@ nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 .dv-home-slide-2-bottom-items-holder > div:first-of-type {background-image: url('../img/home/slide-2/img-body.png');}
 .dv-home-slide-2-bottom-items-holder > div:nth-of-type(2) {background-image: url('../img/home/slide-2/img-men.png');}
 .dv-home-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/home/slide-2/img-face.png');}
+.dv-p-small-inner-pages {padding: 3rem 6rem;}
+
+.dv-label-holder {
+    top: 10%;
+    right: 0;
+    transform: rotate(90deg) translateY(-250%);
+    border-bottom: 1px solid var(--dark);
+}
 
 .dv-nav-links.active:before {
     content: '';
@@ -66,16 +74,41 @@ button.dv-border-dark:hover path{stroke: white}
 button.dv-border-white:hover {background-color: white !important;color: var(--dark) !important;}
 
 /*Media Querys*/
+@media (max-width: 575px) {
+    .dv-home-slide-2-bottom-items-holder {grid-template-columns: repeat(1, 1fr) !important}
+    .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 1 !important}
+}
+
 @media (max-width: 991px) {
+    main {z-index: 1;}
+    nav.show {left: 0;opacity: 1;}
     .dv-bottom-social-links-main.position-absolute,
     .dv-home-slide-2-bottom-items-holder.position-absolute {position: static !important;margin-top: 1.5rem;}
     .dv-nav-links.active {margin-left: 10vw;}
     .dv-nav-links.active:before {width: 100vw;}
-    main {z-index: 1;}
+    .dv-p-small-inner-pages {padding: 1.5rem;}
     .dv-fs-30 {font-size: 20px}
     .dv-fs-60 {font-size: 30px}
-    nav.show {left: 0;opacity: 1;}
     .dv-squar-50  {width: 40px;height: 40px;}
+    .dv-label-holder.d-flex {display: none !important;}
+    .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
+    .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
+
+    .dv-home-slide-2-bottom-items-holder > div {
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dv-home-slide-2-bottom-items-holder {
+        display: grid !important;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
 
     nav {
         position: fixed;
