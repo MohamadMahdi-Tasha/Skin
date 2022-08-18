@@ -59,6 +59,12 @@ nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 .dv-input::placeholder {color: var(--dark);font-weight: 400;font-size: 18px;}
 textarea.dv-input {height: 203px;resize: none;}
 .dv-submit-btn.dv-fw-thin {font-weight: 400;}
+.dv-hair-cat-slide-3-bottom-side-holder > .col,
+.dv-hair-cat-slide-3-bottom-side-holder > .col > div {height: 262px;}
+.dv-hair-cat-slide-3-bottom-side-holder > .col > div {background: linear-gradient(to bottom, transparent, black)}
+.dv-hair-cat-slide-3-bottom-side-holder > .col:first-of-type {background-image: url('../img/home/slide-3/img-1.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > .col:nth-of-type(2) {background-image: url('../img/home/slide-3/img-2.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > .col:last-of-type {background-image: url('../img/home/slide-3/img-3.png');}
 
 .dv-submit-btn {
     background-color: #D19797;
