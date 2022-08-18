@@ -29,6 +29,14 @@ body {
 .dv-nav-links {position:relative;}
 .dv-nav-links.active {margin-left: 1rem;}
 .dv-nav-links.active > a {font-weight: 700;}
+.dv-bg-right {background-size: contain;background-position: right;background-repeat: no-repeat;}
+.dv-desktop-1 {background-image: url('../img/desktop/img-bg-1.png');}
+.dv-fs-30 {font-size: 30px}
+.dv-fs-60 {font-size: 60px}
+.dv-squar-50 {width: 50px;height: 50px;}
+.dv-border-dark {border: 1px solid var(--dark);}
+button.dv-border-dark path {transition: .3s}
+.dv-bottom-9 {bottom: 9%;}
 
 .dv-nav-links.active:before {
     content: '';
@@ -40,3 +48,7 @@ body {
     transform: translateX(-105%);
     background-color: var(--dark);
 }
+
+/*Hover , Active, ...*/
+button.dv-border-dark:hover {background-color: var(--dark) !important;}
+button.dv-border-dark:hover path{stroke: var(--light)}
