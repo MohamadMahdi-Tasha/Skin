@@ -1,6 +1,12 @@
 /*Importing Our Font*/
 @import "../font/Montserrat-font.css";
 
+/*Variables*/
+:root {
+    --light: #f1ecec;
+    --dark: #4D4D4D;
+}
+
 /*CSS RESET*/
 img {pointer-events: none}
 a {text-decoration: none !important;}
@@ -11,4 +17,26 @@ body {
     font-family: Montserrat, Verdana ,sans-serif !important;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: #f1ecec !important;
+}
+
+/*Styles*/
+.dv-fw-bold {font-weight: 700;}
+.dv-fw-semi-bold {font-weight: 600;}
+.dv-fw-regular {font-weight: 500;}
+.dv-fw-thin {font-weight: 400;}
+.dv-text-dark {color: var(--dark) !important;}
+.dv-nav-links {position:relative;}
+.dv-nav-links.active {margin-left: 1rem;}
+.dv-nav-links.active > a {font-weight: 700;}
+
+.dv-nav-links.active:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateX(-105%);
+    background-color: var(--dark);
 }
