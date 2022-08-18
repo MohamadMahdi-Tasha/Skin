@@ -39,6 +39,8 @@ body {
 .dv-border-white {border: 1px solid white;}
 button.dv-border-dark path {transition: .3s}
 .dv-bottom-9 {bottom: 9%;}
+.dv-dark-bg-nav {z-index: 2;background-color: rgba(0,0,0,.3);opacity: 0;pointer-events: none;transition: .3s}
+nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 
 .dv-nav-links.active:before {
     content: '';
@@ -64,13 +66,16 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     main {z-index: 1;}
     .dv-fs-30 {font-size: 20px}
     .dv-fs-60 {font-size: 30px}
+    nav.show {left: 0;opacity: 1;}
 
     nav {
         position: fixed;
-        z-index: 2;
+        z-index: 3 !important;
         height: 100%;
         overflow: auto;
         box-shadow: 0 0 30px rgba(0,0,0,.2);
+        left: -100%;
         opacity: 0;
+        transition: .3s;
     }
 }
