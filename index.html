@@ -23,11 +23,18 @@
 </head>
 <body class="row min-vh-100">
 <!--Left Side-->
-<nav class="col-3 bg-white p-5 d-flex flex-column justify-content-between">
+<nav class="col-lg-3 col-8 bg-white p-lg-5 p-4 d-flex flex-column justify-content-between">
     <!--Top Side-->
     <div class="mb-5">
         <!--Top Side Logo-->
-        <img src="assets/base/img/img-logo-typo.png" alt="Skin" class="mb-5">
+        <div class="d-flex flex-wrap justify-content-lg-start justify-content-between">
+            <img src="assets/base/img/img-logo-typo.png" alt="Skin" class="mb-5">
+            <button class="dv-border-dark bg-transparent rounded-circle dv-squar-50 d-lg-none d-flex justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path stroke="currentColor" d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+        </div>
         <!--Bottom Side Links-->
         <ul class="list-unstyled mt-5">
             <li class="mb-3 dv-nav-links active"><a class="dv-fw-thin dv-text-dark" href="#">Home</a></li>
@@ -46,9 +53,16 @@
     </div>
 </nav>
 <!--Main Section (Right side)-->
-<main class="col-9 mb-6 p-0">
-    <div class="dv-desktop-1 h-100 p-5 dv-bg-cover d-flex flex-column justify-content-center align-items-start position-relative">
-        <h6 class="text-white dv-fw-semi-bold dv-fs-30 mb-3">Skin</h6>
+<main class="col-lg-9 col mb-6 p-0">
+    <div class="dv-desktop-1 h-100 p-lg-5 p-4 dv-bg-cover d-flex flex-column justify-content-lg-center justify-content-between align-items-start position-relative">
+        <div class="d-flex justify-content-lg-start justify-content-between align-items-center col-lg col-12">
+            <h6 class="text-white dv-fw-semi-bold dv-fs-30 mb-3">Skin</h6>
+            <button class="d-lg-none d-flex  justify-content-center align-items-center dv-squar-50 rounded-circle bg-transparent dv-border-white text-white dv-toggle-btn" data-toggle-target="nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+        </div>
         <h3 class="text-white dv-fw-bold dv-fs-60 mb-3">INNOVATION <br> FOR EXCELLENCE</h3>
         <a href="#" class="text-white dv-fw-regular">
             Watch the video
@@ -57,7 +71,7 @@
                 <path d="M29.5 19.634C30.1667 20.0189 30.1667 20.9811 29.5 21.366L18.25 27.8612C17.5833 28.2461 16.75 27.765 16.75 26.9952L16.75 14.0048C16.75 13.235 17.5833 12.7539 18.25 13.1388L29.5 19.634Z" fill="white"/>
             </svg>
         </a>
-        <div class="dv-bottom-9 position-absolute row gx-4">
+        <div class="dv-bottom-social-links-main dv-bottom-9 position-absolute row gx-4">
             <a class="col" href="#">
                 <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.768 7.49927H8.5V5.59927C8.48103 5.45787 8.49343 5.31404 8.53629 5.17797C8.57916 5.0419 8.65146 4.91694 8.74805 4.81195C8.84464 4.70696 8.96315 4.62452 9.09518 4.57048C9.22721 4.51644 9.36952 4.49213 9.512 4.49927C9.93 4.49927 12.5 4.50927 12.5 4.50927V0.499268H8.171C4.244 0.499268 3.5 3.47327 3.5 5.35427V7.49927H0.5V11.4993H3.5V23.4993H8.5V11.4993H12.351L12.768 7.49927Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>

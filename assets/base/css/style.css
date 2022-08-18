@@ -36,6 +36,7 @@ body {
 .dv-fs-60 {font-size: 60px}
 .dv-squar-50 {width: 50px;height: 50px;}
 .dv-border-dark {border: 1px solid var(--dark);}
+.dv-border-white {border: 1px solid white;}
 button.dv-border-dark path {transition: .3s}
 .dv-bottom-9 {bottom: 9%;}
 
@@ -53,3 +54,23 @@ button.dv-border-dark path {transition: .3s}
 /*Hover , Active, ...*/
 button.dv-border-dark:hover {background-color: var(--dark) !important;}
 button.dv-border-dark:hover path{stroke: white}
+button.dv-border-white:hover {background-color: white !important;color: var(--dark) !important;}
+
+/*Media Querys*/
+@media (max-width: 991px) {
+    .dv-bottom-social-links-main.position-absolute {position: static !important;margin-top: 1.5rem;}
+    .dv-nav-links.active {margin-left: 10vw;}
+    .dv-nav-links.active:before {width: 100vw;}
+    main {z-index: 1;}
+    .dv-fs-30 {font-size: 20px}
+    .dv-fs-60 {font-size: 30px}
+
+    nav {
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        overflow: auto;
+        box-shadow: 0 0 30px rgba(0,0,0,.2);
+        opacity: 0;
+    }
+}
