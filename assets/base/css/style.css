@@ -50,8 +50,10 @@ nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 .dv-home-slide-2-bottom-items-holder > div:nth-of-type(2) {background-image: url('../img/home/slide-2/img-men.png');}
 .dv-home-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/home/slide-2/img-face.png');}
 .dv-p-small-inner-pages {padding: 3rem 6rem;}
-.dv-input::placeholder {color: var(--dark);}
+.dv-input::placeholder {color: var(--dark);font-weight: 400;font-size: 18px;}
 textarea.dv-input {height: 203px;resize: none;}
+.dv-submit-btn.dv-fw-thin {font-weight: 400;}
+
 .dv-submit-btn {
     background-color: #D19797;
     border: none;
@@ -72,6 +74,8 @@ textarea.dv-input {height: 203px;resize: none;}
     height: 60px;
     padding: 1rem;
     transition: .3s;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .dv-label-holder {
@@ -110,6 +114,7 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
 @media (max-width: 991px) {
     main {z-index: 1;}
     nav.show {left: 0;opacity: 1;}
+    body {overflow-y:visible;}
     .dv-bottom-social-links-main.position-absolute,
     .dv-home-slide-2-bottom-items-holder.position-absolute {position: static !important;margin-top: 1.5rem;}
     .dv-nav-links.active {margin-left: 10vw;}
@@ -121,7 +126,7 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-label-holder.d-flex {display: none !important;}
     .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
     .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
-    body {overflow-y:visible;}
+    .dv-mq-991-pos-static.position-absolute {position: static !important;}
 
     .dv-home-slide-2-bottom-items-holder > div {
         height: 250px;
