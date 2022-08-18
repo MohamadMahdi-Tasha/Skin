@@ -16,7 +16,7 @@ body {
     font-size: 18px !important;
     font-family: Montserrat, Verdana ,sans-serif !important;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #f1ecec !important;
 }
 
@@ -93,6 +93,7 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-label-holder.d-flex {display: none !important;}
     .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
     .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
+    body {overflow-y:visible;}
 
     .dv-home-slide-2-bottom-items-holder > div {
         height: 250px;
