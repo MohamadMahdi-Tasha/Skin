@@ -34,6 +34,8 @@ body {
 .dv-bg-cover-right {background-size: cover;background-position: right;}
 .dv-home-slide-1 {background-image: url('../img/home/img-bg-1.png');}
 .dv-home-slide-2 {background-image: url('../img/home/img-bg-2.png');}
+.dv-home-slide-3 {background-image: url('../img/home/img-bg-3.png');}
+.dv-home-slide-4 {background-image: url('../img/home/img-bg-4.png');}
 .dv-fs-20 {font-size: 20px}
 .dv-fs-30 {font-size: 30px}
 .dv-fs-60 {font-size: 60px}
@@ -127,6 +129,7 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
     .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
     .dv-mq-991-pos-static.position-absolute {position: static !important;}
+    .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4 {background-image: none;}
 
     .dv-home-slide-2-bottom-items-holder > div {
         height: 250px;
