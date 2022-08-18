@@ -1,0 +1,14 @@
+/*Importing Our Font*/
+@import "../font/Montserrat-font.css";
+
+/*CSS RESET*/
+img {pointer-events: none}
+a {text-decoration: none !important;}
+button {transition: .3s;cursor: pointer;}
+
+body {
+    font-size: 18px !important;
+    font-family: Montserrat, Verdana ,sans-serif !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
