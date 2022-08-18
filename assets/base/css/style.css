@@ -51,6 +51,9 @@ nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 .dv-home-slide-2-bottom-items-holder > div:first-of-type {background-image: url('../img/home/slide-2/img-body.png');}
 .dv-home-slide-2-bottom-items-holder > div:nth-of-type(2) {background-image: url('../img/home/slide-2/img-men.png');}
 .dv-home-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/home/slide-2/img-face.png');}
+.dv-hair-cat-slide-2-items-holder > div:first-of-type {background-image: url('../img/hair-cat/slide-2/img-1.png');}
+.dv-hair-cat-slide-2-items-holder > div:nth-of-type(2) {background-image: url('../img/hair-cat/slide-2/img-2.png');}
+.dv-hair-cat-slide-2-items-holder > div:last-of-type {background-image: url('../img/hair-cat/slide-2/img-3.png');}
 .dv-hair-cat-slide-1 {background-image: url('../img/hair-cat/img-bg-1.png');}
 .dv-p-small-inner-pages {padding: 3rem 6rem;}
 .dv-input::placeholder {color: var(--dark);font-weight: 400;font-size: 18px;}
