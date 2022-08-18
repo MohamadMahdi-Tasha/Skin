@@ -148,7 +148,7 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
     .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
     .dv-mq-991-pos-static.position-absolute {position: static !important;}
-    .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4 {background-image: none;}
+    .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4, .dv-hair-cat-slide-1 {background-image: none;}
 
     .dv-home-slide-2-bottom-items-holder > div {
         height: 250px;
