@@ -38,11 +38,8 @@ div.w-100, div.w-25, div.w-75,
 .dv-bg-right {background-size: contain;background-position: right;background-repeat: no-repeat;}
 .dv-bg-cover {background-size: cover;background-position: center;}
 .dv-bg-cover-right {background-size: cover;background-position: right;}
-.row-cols-lg-4 > .col:hover {
-    background-image: none;
-}
 .dv-home-slide-1 {background-image: url('../img/home/img-bg-1.png');}
-.dv-home-slide-2 {background-image: url('../img/home/img-bg-2.png');}
+.dv-home-slide-2 {background-image: url('../img/home/img-bg-2.png');background-size: 100%;background-repeat: no-repeat;}
 .dv-home-slide-3 {background-image: url('../img/home/img-bg-3.png');}
 .dv-home-slide-4 {background-image: url('../img/home/img-bg-4.png');}
 .dv-fs-20 {font-size: 20px}
@@ -86,12 +83,12 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-hair-cat-slide-4-bottom-side-holder > .col:nth-of-type(4) {background-image: url('../img/hair-cat/img-4.png');}
 .dv-hair-cat-slide-4-bottom-side-holder > .col:nth-of-type(5) {background-image: url('../img/hair-cat/img-5.png');}
 .dv-hair-cat-slide-4-bottom-side-holder > .col:nth-of-type(6) {background-image: url('../img/hair-cat/img-6.png');}
-.dv-services-slide-1 {background-image: url('../img/services/img-bg-1.png');}
-.dv-services-slide-2 {background-image: url('../img/services/img-bg-2.png');}
-.dv-services-slide-3 {background-image: url('../img/services/img-bg-3.png');}
+.dv-services-slide-1 {background-image: url('../img/services/img-bg-1.png');background-size: 40%;background-repeat: no-repeat;background-position: bottom right;}
+.dv-services-slide-2 {background-image: url('../img/services/img-bg-2.png');background-size: 40%;background-repeat: no-repeat;background-position: bottom right;}
+.dv-services-slide-3 {background-image: url('../img/services/img-bg-3.png');background-size: 60%;background-repeat: no-repeat;background-position: bottom right;}
 .dv-services-slide-5 {background-image: url('../img/services/img-bg-5.png');}
-.dv-services-slide-6 {background-image: url('../img/services/img-bg-6.png');}
-.dv-services-slide-5.dv-bg-right {background-size: 37% !important;background-position: right bottom;}
+.dv-services-slide-6 {background-image: url('../img/services/img-bg-6.png');background-size: 45%;background-repeat: no-repeat;background-position: bottom right;}
+.dv-services-slide-5.dv-bg-right {background-size: 40% !important;background-position: right bottom;}
 .accordion > div:last-of-type {border-bottom: 1px solid #dee2e6 !important;}
 .accordion-button:not(.collapsed) {color: currentColor !important;}
 .accordion-button > svg path{transition: .3s;transform-origin: center}
