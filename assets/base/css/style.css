@@ -54,6 +54,7 @@ button.dv-border-dark path {transition: .3s}
 .dv-fs-18 {font-size: 18px}
 .dv-dark-bg-nav {z-index: 2;background-color: rgba(0,0,0,.3);opacity: 0;pointer-events: none;transition: .3s}
 nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
+.dv-home-slide-2-bottom-items-holder > div {height: 50px;}
 .dv-home-slide-2-bottom-items-holder > div:first-of-type {background-image: url('../img/home/slide-2/img-body.png');}
 .dv-home-slide-2-bottom-items-holder > div:nth-of-type(2) {background-image: url('../img/home/slide-2/img-men.png');}
 .dv-home-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/home/slide-2/img-face.png');}
@@ -109,6 +110,7 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-contact-us-page-1 {background-image: url('../img/contact-us/img-bg-1.png');}
 .dv-contact-us-page-3 {background-image: url('../img/contact-us/img-bg-3.png');}
 .dv-text-red {color: var(--red);}
+.dv-bg-right-bigger {background-size: 120%;background-position: right bottom;}
 
 .dv-submit-btn {
     background-color: var(--red);
