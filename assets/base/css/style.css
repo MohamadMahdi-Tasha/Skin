@@ -5,6 +5,7 @@
 :root {
     --light: #f1ecec;
     --dark: #4D4D4D;
+    --red: #9D5A5A;
 }
 
 /*CSS RESET*/
@@ -105,10 +106,12 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-about-us-slide-2 > .col:nth-of-type(4) {background-image: url('../img/about-us/team/img-4.png');}
 .dv-about-us-slide-2 > .col:nth-of-type(5) {background-image: url('../img/about-us/team/img-5.png');}
 .dv-about-us-slide-2 > .col:nth-of-type(6) {background-image: url('../img/about-us/team/img-6.png');}
-
+.dv-contact-us-page-1 {background-image: url('../img/contact-us/img-bg-1.png');}
+.dv-contact-us-page-3 {background-image: url('../img/contact-us/img-bg-3.png');}
+.dv-text-red {color: var(--red);}
 
 .dv-submit-btn {
-    background-color: #D19797;
+    background-color: var(--red);
     border: none;
     font-weight: 700;
     font-size: 20px;
