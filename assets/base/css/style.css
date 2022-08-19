@@ -22,10 +22,6 @@ body {
     background-color: #f1ecec !important;
 }
 
-/*For Debug*/
-div.w-100, div.w-25, div.w-75,
-.fw-bold,.text-dark {outline: 3px solid red ;}
-
 /*Styles*/
 .dv-fw-bold {font-weight: 700;}
 .dv-fw-semi-bold {font-weight: 600;}
@@ -35,7 +31,7 @@ div.w-100, div.w-25, div.w-75,
 .dv-nav-links {position:relative;}
 .dv-nav-links.active {margin-left: 1rem;}
 .dv-nav-links.active > a {font-weight: 700;}
-.dv-bg-right {background-size: contain;background-position: right;background-repeat: no-repeat;}
+.dv-bg-right {background-size: contain;background-position: right bottom;background-repeat: no-repeat;}
 .dv-bg-cover {background-size: cover;background-position: center;}
 .dv-bg-cover-right {background-size: cover;background-position: right;}
 .dv-home-slide-1 {background-image: url('../img/home/img-bg-1.png');}
@@ -93,7 +89,7 @@ textarea.dv-input {height: 203px;resize: none;}
 .accordion-button:not(.collapsed) {color: currentColor !important;}
 .accordion-button > svg path{transition: .3s;transform-origin: center}
 .accordion-button:after {background-image: none !important;}
-.accordion-button:not(.collapsed) > svg path:first-of-type{transform: rotate(90deg);}
+.accordion-button[aria-expanded="true"] > svg path:first-of-type{transform: rotate(90deg);}
 .dv-conditions-slide-1 {background-image: url('../img/conditions/img-bg-1.png');}
 .dv-conditions-slide-2 {background-image: url('../img/conditions/img-bg-2.png');}
 .dv-conditions-slide-2-bottom-items-holder > div:first-of-type {background-image: url('../img/hair-cat/slide-2/img-1.png');}
@@ -198,12 +194,14 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
 
 /*Media Querys*/
 @media (max-width: 575px) {
-    .dv-home-slide-2-bottom-items-holder {grid-template-columns: repeat(1, 1fr) !important}
+    .dv-home-slide-2-bottom-items-holder, .dv-hair-cat-slide-2-items-holder > div {grid-template-columns: repeat(1, 1fr) !important}
     .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 1 !important}
 }
 
 @media (max-width: 991px) {
     main {z-index: 1;}
+    .swiper-wrapper > .swiper-slide:first-of-type, .dv-bg-cover {min-height: 100vh !important;}
+    .swiper-wrapper {display: block !important;flex-direction: column !important;height: auto !important;}
     nav.show {left: 0;opacity: 1;}
     .dv-bottom-social-links-main.position-absolute,
     .dv-home-slide-2-bottom-items-holder.position-absolute {position: static !important;margin-top: 1.5rem;}
@@ -217,21 +215,29 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
     .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
     .dv-mq-991-pos-static.position-absolute {position: static !important;}
-    .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4, .dv-hair-cat-slide-1, .dv-conditions-slide-2 {background-image: none;}
+    .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4, .dv-hair-cat-slide-1,
+    .dv-conditions-slide-2, .dv-about-us-slide-1, .dv-conditions-slide-1, .dv-contact-us-page-1,
+    .dv-services-slide-1 , .dv-services-slide-2, .dv-services-slide-3, .dv-services-slide-4, .dv-services-slide-5, .dv-services-slide-6{background-image: none;}
     .dv-home-slide-2-bottom-items-holder.position-absolute, .dv-conditions-slide-2-bottom-items-holder.position-absolute {position: static !important;}
     .dv-each-conditions-slide-2 {background-image: none;}
     .dv-blog-post {background-image: none;}
+    .dv-hair-cat-slide-2-items-holder.position-absolute {position: static !important;}
     .dv-paragraph {width: 100%;}
     .dv-title {font-size: 30px}
+    footer > div:last-of-type > div:last-of-type {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
 
-    .dv-home-slide-2-bottom-items-holder, .dv-conditions-slide-2-bottom-items-holder {
+    .dv-home-slide-2-bottom-items-holder, .dv-conditions-slide-2-bottom-items-holder, .dv-hair-cat-slide-2-items-holder {
         display: grid !important;
         grid-template-columns: repeat(2 , 1fr);
         gap: 1rem;
-        padding: 1rem;
     }
 
-    .dv-home-slide-2-bottom-items-holder > div,.dv-conditions-slide-2-bottom-items-holder > div {
+    .dv-home-slide-2-bottom-items-holder > div,.dv-conditions-slide-2-bottom-items-holder > div, .dv-hair-cat-slide-2-items-holder > div {
         height: 250px;
         background-position: center;
         background-size: cover;

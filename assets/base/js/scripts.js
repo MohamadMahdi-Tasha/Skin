@@ -3,8 +3,15 @@ const toggleBtns = document.querySelectorAll('.dv-toggle-btn');
 const nextSlideBtns = document.querySelectorAll('.dv-next-slide-btn');
 const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
 
-// Initializing Main Swiper Of Pages With MouseWheel Option
-const MainSwiper = new Swiper('.main-swiper', {mousewheel: true,})
+// Initializing Main Swiper Of Pages
+const MainSwiper = new Swiper('.main-swiper', {
+    mousewheel: true,
+    enabled: false,
+    breakpoints:  {
+        991: {enabled: true,},
+        1: {enabled: false,},
+    },
+})
 
 // Adding Event Listener On Each Next Slide Button That Listens To Click And Slides Main Swiper To Next Slide Of Current slide
 nextSlideBtns.forEach(item => item.addEventListener('click', () => MainSwiper.slideNext()))
