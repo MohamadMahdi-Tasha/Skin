@@ -21,6 +21,10 @@ body {
     background-color: #f1ecec !important;
 }
 
+/*For Debug*/
+div.w-100, div.w-25, div.w-75 {outline: 3px solid red ;}
+.dv-label-holder {background-color: red !important;}
+
 /*Styles*/
 .dv-fw-bold {font-weight: 700;}
 .dv-fw-semi-bold {font-weight: 600;}
@@ -92,6 +96,16 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-conditions-slide-2-bottom-items-holder > div:nth-of-type(2) {background-image: url('../img/hair-cat/slide-2/img-2.png');}
 .dv-conditions-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/hair-cat/slide-2/img-3.png');}
 .dv-each-conditions-slide-2 {background-image: url('../img/each-condition/img-bg-2.png');}
+.dv-about-us-slide-1 {background-image: url('../img/about-us/img-bg-1.png');}
+.dv-about-us-slide-2 > .col {height: 200px;background-size: cover;}
+.dv-about-us-slide-2 > .col > div {height: 200px;background: linear-gradient(to bottom, transparent, rgba(0,0,0,.5));}
+.dv-about-us-slide-2 > .col:first-of-type {background-image: url('../img/about-us/team/img-1.png');}
+.dv-about-us-slide-2 > .col:nth-of-type(2) {background-image: url('../img/about-us/team/img-2.png');}
+.dv-about-us-slide-2 > .col:nth-of-type(3) {background-image: url('../img/about-us/team/img-3.png');}
+.dv-about-us-slide-2 > .col:nth-of-type(4) {background-image: url('../img/about-us/team/img-4.png');}
+.dv-about-us-slide-2 > .col:nth-of-type(5) {background-image: url('../img/about-us/team/img-5.png');}
+.dv-about-us-slide-2 > .col:nth-of-type(6) {background-image: url('../img/about-us/team/img-6.png');}
+
 
 .dv-submit-btn {
     background-color: #D19797;
