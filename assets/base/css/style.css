@@ -12,13 +12,12 @@
 img {pointer-events: none}
 a {text-decoration: none !important;}
 button {transition: .3s;cursor: pointer;}
-p {line-height: 34px !important;}
 
 body {
     font-size: 18px !important;
     font-family: Montserrat, Verdana ,sans-serif !important;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #f1ecec !important;
 }
 
@@ -115,6 +114,25 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-bg-right-bigger {background-size: 120%;background-position: right bottom;}
 .dv-about-us-map-slide {background-image: url('../img/img-map.jpg');}
 
+.dv-paragraph {
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+.dv-title {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--dark);
+}
+
+.dv-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
 .dv-submit-btn {
     background-color: var(--red);
     border: none;
@@ -176,7 +194,6 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
 @media (max-width: 991px) {
     main {z-index: 1;}
     nav.show {left: 0;opacity: 1;}
-    body {overflow-y:visible;}
     .dv-bottom-social-links-main.position-absolute,
     .dv-home-slide-2-bottom-items-holder.position-absolute {position: static !important;margin-top: 1.5rem;}
     .dv-nav-links.active {margin-left: 10vw;}
