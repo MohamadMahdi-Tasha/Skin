@@ -91,6 +91,7 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-conditions-slide-2-bottom-items-holder > div:first-of-type {background-image: url('../img/hair-cat/slide-2/img-1.png');}
 .dv-conditions-slide-2-bottom-items-holder > div:nth-of-type(2) {background-image: url('../img/hair-cat/slide-2/img-2.png');}
 .dv-conditions-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/hair-cat/slide-2/img-3.png');}
+.dv-each-conditions-slide-2 {background-image: url('../img/each-condition/img-bg-2.png');}
 
 .dv-submit-btn {
     background-color: #D19797;
@@ -168,7 +169,8 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-mq-991-pos-static.position-absolute {position: static !important;}
     .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4, .dv-hair-cat-slide-1, .dv-conditions-slide-2 {background-image: none;}
     .dv-home-slide-2-bottom-items-holder.position-absolute, .dv-conditions-slide-2-bottom-items-holder.position-absolute {position: static !important;}
-    
+    .dv-each-conditions-slide-2 {background-image: none;}
+
     .dv-home-slide-2-bottom-items-holder, .dv-conditions-slide-2-bottom-items-holder {
         display: grid !important;
         grid-template-columns: repeat(2 , 1fr);
