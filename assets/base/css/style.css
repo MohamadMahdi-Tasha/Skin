@@ -25,7 +25,6 @@ body {
 /*For Debug*/
 div.w-100, div.w-25, div.w-75,
 .fw-bold,.text-dark {outline: 3px solid red ;}
-.dv-label-holder {background-color: red !important;}
 
 /*Styles*/
 .dv-fw-bold {font-weight: 700;}
