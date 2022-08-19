@@ -4,6 +4,7 @@
 /*Variables*/
 :root {
     --light: #f1ecec;
+    --lighter-dark: #8A8A8A;
     --dark: #4D4D4D;
     --red: #9D5A5A;
 }
@@ -22,7 +23,8 @@ body {
 }
 
 /*For Debug*/
-div.w-100, div.w-25, div.w-75 {outline: 3px solid red ;}
+div.w-100, div.w-25, div.w-75,
+.fw-bold,.text-dark {outline: 3px solid red ;}
 .dv-label-holder {background-color: red !important;}
 
 /*Styles*/
@@ -37,6 +39,9 @@ div.w-100, div.w-25, div.w-75 {outline: 3px solid red ;}
 .dv-bg-right {background-size: contain;background-position: right;background-repeat: no-repeat;}
 .dv-bg-cover {background-size: cover;background-position: center;}
 .dv-bg-cover-right {background-size: cover;background-position: right;}
+.row-cols-lg-4 > .col:hover {
+    background-image: none;
+}
 .dv-home-slide-1 {background-image: url('../img/home/img-bg-1.png');}
 .dv-home-slide-2 {background-image: url('../img/home/img-bg-2.png');}
 .dv-home-slide-3 {background-image: url('../img/home/img-bg-3.png');}
@@ -50,7 +55,7 @@ div.w-100, div.w-25, div.w-75 {outline: 3px solid red ;}
 .dv-border-white {border: 1px solid white;}
 button.dv-border-dark path {transition: .3s}
 .dv-bottom-9 {bottom: 9%;}
-.dv-fs-18 {font-size: 18px}
+.dv-fs-18 {font-size: 18px !important}
 .dv-dark-bg-nav {z-index: 2;background-color: rgba(0,0,0,.3);opacity: 0;pointer-events: none;transition: .3s}
 nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 .dv-home-slide-2-bottom-items-holder > div {height: 50px;}
@@ -90,9 +95,9 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-services-slide-5.dv-bg-right {background-size: 37% !important;background-position: right bottom;}
 .accordion > div:last-of-type {border-bottom: 1px solid #dee2e6 !important;}
 .accordion-button:not(.collapsed) {color: currentColor !important;}
-.accordion-button > svg {transition: .3s}
+.accordion-button > svg path{transition: .3s;transform-origin: center}
 .accordion-button:after {background-image: none !important;}
-.accordion-button:not(.collapsed) > svg{transform: rotate(45deg);}
+.accordion-button:not(.collapsed) > svg path:first-of-type{transform: rotate(90deg);}
 .dv-conditions-slide-1 {background-image: url('../img/conditions/img-bg-1.png');}
 .dv-conditions-slide-2 {background-image: url('../img/conditions/img-bg-2.png');}
 .dv-conditions-slide-2-bottom-items-holder > div:first-of-type {background-image: url('../img/hair-cat/slide-2/img-1.png');}
@@ -114,23 +119,33 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-bg-right-bigger {background-size: 120%;background-position: right bottom;}
 .dv-about-us-map-slide {background-image: url('../img/img-map.jpg');}
 
+.dv-link {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--dark) !important;
+}
+
 .dv-paragraph {
     line-height: 34px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    color: var(--dark);
+    color: var(--dark) !important;
+    width: 70%;
+    margin-bottom: 2rem;
 }
 
 .dv-title {
     font-weight: 700;
     font-size: 50px;
-    color: var(--dark);
+    color: var(--dark) !important;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .dv-subtitle {
     font-size: 18px;
     font-weight: 500;
-    color: var(--dark);
+    color: var(--lighter-dark);
 }
 
 .dv-submit-btn {
@@ -210,6 +225,8 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-home-slide-2-bottom-items-holder.position-absolute, .dv-conditions-slide-2-bottom-items-holder.position-absolute {position: static !important;}
     .dv-each-conditions-slide-2 {background-image: none;}
     .dv-blog-post {background-image: none;}
+    .dv-paragraph {width: 100%;}
+    .dv-title {font-size: 30px}
 
     .dv-home-slide-2-bottom-items-holder, .dv-conditions-slide-2-bottom-items-holder {
         display: grid !important;
