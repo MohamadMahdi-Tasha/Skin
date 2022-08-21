@@ -6,10 +6,16 @@ const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
 // Initializing Main Swiper Of Pages
 const MainSwiper = new Swiper('.main-swiper', {
     mousewheel: true,
-    enabled: false,
-    breakpoints:  {
-        991: {enabled: true,},
-        1: {enabled: false,},
+    effect: 'creative',
+    creativeEffect: {
+        prev: {
+            // will set `translateZ(-400px)` on previous slides
+            translate: [0, 0, -400],
+        },
+        next: {
+            // will set `translateX(100%)` on next slides
+            translate: ['100%', 0, 0],
+        },
     },
 })
 

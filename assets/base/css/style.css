@@ -110,6 +110,7 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-text-red {color: var(--red);}
 .dv-bg-right-bigger {background-size: 120%;background-position: right bottom;}
 .dv-about-us-map-slide {background-image: url('../img/img-map.jpg');}
+.swiper-wrapper > .swiper-slide {background-color: var(--light);}
 
 .dv-link {
     font-weight: 500;
@@ -200,8 +201,6 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
 
 @media (max-width: 991px) {
     main {z-index: 1;}
-    .swiper-wrapper > .swiper-slide:first-of-type, .dv-bg-cover {min-height: 100vh !important;}
-    .swiper-wrapper {display: block !important;flex-direction: column !important;height: auto !important;}
     nav.show {left: 0;opacity: 1;}
     .dv-bottom-social-links-main.position-absolute,
     .dv-home-slide-2-bottom-items-holder.position-absolute {position: static !important;margin-top: 1.5rem;}
