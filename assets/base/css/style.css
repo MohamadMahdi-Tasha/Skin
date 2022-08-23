@@ -66,15 +66,14 @@ nav.show  ~ .dv-dark-bg-nav{opacity: 1;pointer-events: visible;}
 .dv-input::placeholder {color: var(--dark);font-weight: 400;font-size: 18px;}
 textarea.dv-input {height: 203px;resize: none;}
 .dv-submit-btn.dv-fw-thin {font-weight: 400;}
-.dv-hair-cat-slide-3-bottom-side-holder > .col,
-.dv-hair-cat-slide-4-bottom-side-holder > .col {background-size: cover;}
-.dv-hair-cat-slide-3-bottom-side-holder > .col,
-.dv-hair-cat-slide-3-bottom-side-holder > .col > div {height: 262px;}
-.dv-hair-cat-slide-3-bottom-side-holder > .col > div, .dv-hair-cat-slide-4-bottom-side-holder > .col > div{background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .5))}
-.dv-hair-cat-slide-3-bottom-side-holder > .col:first-of-type {background-image: url('../img/home/slide-3/img-1.png');}
-.dv-hair-cat-slide-3-bottom-side-holder > .col:nth-of-type(2) {background-image: url('../img/home/slide-3/img-2.png');}
-.dv-hair-cat-slide-3-bottom-side-holder > .col:last-of-type {background-image: url('../img/home/slide-3/img-3.png');}
-.dv-hair-cat-slide-4-bottom-side-holder > .col > div{height: 200px;}
+.dv-hair-cat-slide-3-bottom-side-holder > div > div > div {height: 200px;background: linear-gradient(to bottom, transparent, rgba(0,0,0,.5));}
+.dv-hair-cat-slide-3-bottom-side-holder > div > div {height: 200px;background-size: cover;}
+.dv-hair-cat-slide-3-bottom-side-holder > div:first-of-type > div:first-of-type {background-image: url('../img/home/slide-3/img-1.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > div:first-of-type > div:nth-of-type(2) {background-image: url('../img/home/slide-3/img-2.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > div:first-of-type > div:nth-of-type(3) {background-image: url('../img/home/slide-3/img-3.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > div:nth-of-type(2) > div:first-of-type {background-image: url('../img/hair-cat/img-4.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > div:nth-of-type(2) > div:nth-of-type(2) {background-image: url('../img/hair-cat/img-5.png');}
+.dv-hair-cat-slide-3-bottom-side-holder > div:nth-of-type(2) > div:nth-of-type(3) {background-image: url('../img/hair-cat/img-6.png');}
 .dv-hair-cat-slide-4-bottom-side-holder > .col:first-of-type {background-image: url('../img/home/slide-3/img-1.png');}
 .dv-hair-cat-slide-4-bottom-side-holder > .col:nth-of-type(2) {background-image: url('../img/home/slide-3/img-2.png');}
 .dv-hair-cat-slide-4-bottom-side-holder > .col:nth-of-type(3) {background-image: url('../img/home/slide-3/img-3.png');}
