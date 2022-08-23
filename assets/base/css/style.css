@@ -41,7 +41,7 @@ body {
 .dv-home-slide-3 {background-image: url('../img/home/img-bg-3.png');}
 .dv-home-slide-4 {background-image: url('../img/home/img-bg-4.png');}
 .dv-fs-20 {font-size: 20px}
-.dv-fs-30 {font-size: 30px}
+.dv-fs-30 {font-size: 30px !important}
 .dv-fs-60 {font-size: 60px}
 .dv-fs-50 {font-size: 50px}
 .dv-squar-50 {width: 50px;height: 50px;}
@@ -209,7 +209,7 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
     .dv-nav-links.active {margin-left: 10vw;}
     .dv-nav-links.active:before {width: 100vw;}
     .dv-p-small-inner-pages {padding: 1.5rem;}
-    .dv-fs-30 {font-size: 20px}
+    .dv-fs-30 {font-size: 20px !important}
     .dv-fs-60 {font-size: 30px}
     .dv-squar-50  {width: 40px;height: 40px;}
     .dv-label-holder.d-flex {display: none !important;}
