@@ -211,6 +211,15 @@ form:not(.animate), footer:not(.animate),
 footer.animate {animation: footer-animation .5s ;}
 form.animate {animation: form-animation .7s linear;}
 
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 /*KeyFrames*/
 @keyframes title-animation { from {opacity: 0;transform: translateX(10px);} to {opacity: 1;transform: translateX(0);} }
 @keyframes subtitle-animation { from {opacity: 0;transform: translateY(10px);} to {opacity: 1;transform: translateY(0);} }

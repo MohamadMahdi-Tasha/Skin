@@ -2,6 +2,7 @@
 const toggleBtns = document.querySelectorAll('.dv-toggle-btn');
 const nextSlideBtns = document.querySelectorAll('.dv-next-slide-btn');
 const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
+const swup = new Swup();
 
 // Initializing Main Swiper Of Pages
 const mainSwiper = new Swiper('.main-swiper', {
