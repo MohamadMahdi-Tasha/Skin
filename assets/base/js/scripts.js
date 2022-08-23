@@ -4,7 +4,7 @@ const nextSlideBtns = document.querySelectorAll('.dv-next-slide-btn');
 const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
 
 // Initializing Main Swiper Of Pages
-const MainSwiper = new Swiper('.main-swiper', {
+const mainSwiper = new Swiper('.main-swiper', {
     mousewheel: true,
     effect: 'creative',
     creativeEffect: {
@@ -19,11 +19,34 @@ const MainSwiper = new Swiper('.main-swiper', {
     },
 })
 
+function addAnimationToTexts() {
+    const titlesInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-title');
+    const subTitlesInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-subtitle');
+    const paragraphInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-paragraph');
+    const labelHoldersInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-label-holder');
+    const formsInVisibleSlide = document.querySelectorAll('.swiper-slide-visible form');
+    const linksInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-link');
+    const footersInVisibleSlide = document.querySelectorAll('.swiper-slide-visible footer');
+    const nextAndPrevSlideButtonsInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-next-slide-btn, .swiper-slide-visible .dv-prev-slide-btn');
+
+    titlesInVisibleSlide.forEach(item => item.classList.add('animate'))
+    subTitlesInVisibleSlide.forEach(item => item.classList.add('animate'))
+    paragraphInVisibleSlide.forEach(item => item.classList.add('animate'))
+    labelHoldersInVisibleSlide.forEach(item => item.classList.add('animate'))
+    formsInVisibleSlide.forEach(item => item.classList.add('animate'))
+    linksInVisibleSlide.forEach(item => item.classList.add('animate'))
+    footersInVisibleSlide.forEach(item => item.classList.add('animate'))
+    nextAndPrevSlideButtonsInVisibleSlide.forEach(item => item.classList.add('animate'))
+}
+
+window.onload = () => addAnimationToTexts();
+mainSwiper.on('slideChange', () => addAnimationToTexts())
+
 // Adding Event Listener On Each Next Slide Button That Listens To Click And Slides Main Swiper To Next Slide Of Current slide
-nextSlideBtns.forEach(item => item.addEventListener('click', () => MainSwiper.slideNext()))
+nextSlideBtns.forEach(item => item.addEventListener('click', () => mainSwiper.slideNext()))
 
 // Adding Event Listener On Each Previous Slide Button That Listens To Click And Slides Main Swiper To Previous Slide Of Current slide
-PrevSlideBtns.forEach(item => item.addEventListener('click', () => MainSwiper.slidePrev()))
+PrevSlideBtns.forEach(item => item.addEventListener('click', () => mainSwiper.slidePrev()))
 
 // Adding Event Listener On Each Button That Has Class Of 'dv-toggle-btn' That Listens To Click On Them
 // And Then Gets Value Of Attribute Of 'data-toggle-target' And Saves It In Variables Called 'target'. Then

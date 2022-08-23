@@ -195,6 +195,30 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
 .dv-submit-btn:active {background-color: #a47676;}
 .accordion-button:focus {box-shadow: none !important}
 
+/*Animations*/
+.dv-title:not(.animate), .dv-subtitle:not(.animate),
+.dv-paragraph:not(.animate), .dv-label-holder:not(.animate),
+form:not(.animate), footer:not(.animate),
+.dv-prev-slide-btn:not(.animate), .dv-next-slide-btn:not(.animate),
+.dv-link:not(.animate) {opacity: 0;}
+
+.dv-title.animate {animation: title-animation .5s linear;}
+.dv-subtitle.animate {animation: subtitle-animation .5s linear;}
+.dv-paragraph.animate {animation: subtitle-animation .5s linear;}
+.dv-label-holder.animate {animation: label-animation 1s linear;}
+.dv-link.animate {animation: title-animation .7s linear;}
+.dv-prev-slide-btn.animate, .dv-next-slide-btn.animate {animation: button-animation 1s ease-in}
+footer.animate {animation: footer-animation .5s ;}
+form.animate {animation: form-animation .7s linear;}
+
+/*KeyFrames*/
+@keyframes title-animation { from {opacity: 0;transform: translateX(10px);} to {opacity: 1;transform: translateX(0);} }
+@keyframes subtitle-animation { from {opacity: 0;transform: translateY(10px);} to {opacity: 1;transform: translateY(0);} }
+@keyframes label-animation { from {opacity: 0;transform: rotate(90deg) translateY(-300%);} to {opacity: 1;transform: rotate(90deg) translateY(-250%)} }
+@keyframes form-animation { from {opacity: 0;} to {opacity: 1;} }
+@keyframes footer-animation { from {opacity: 0;transform: translateY(100%)} to {opacity: 1;translateY(0)} }
+@keyframes button-animation { from {opacity: 0;transform: scale(0);} to {opacity: 1;transform: scale(1);} }
+
 /*Media Querys*/
 @media (max-width: 575px) {
     .dv-home-slide-2-bottom-items-holder, .dv-hair-cat-slide-2-items-holder > div {grid-template-columns: repeat(1, 1fr) !important}
