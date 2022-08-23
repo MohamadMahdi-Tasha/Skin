@@ -19,6 +19,7 @@ const mainSwiper = new Swiper('.main-swiper', {
     },
 })
 
+// A Function That Adds Class Of Animate To Each Variables Init.
 function addAnimationToTexts() {
     const titlesInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-title');
     const subTitlesInVisibleSlide = document.querySelectorAll('.swiper-slide-visible .dv-subtitle');
@@ -39,7 +40,10 @@ function addAnimationToTexts() {
     nextAndPrevSlideButtonsInVisibleSlide.forEach(item => item.classList.add('animate'))
 }
 
+// Adding Event Listener On Load Of Window Which Calls  'addAnimationToTexts' Function
 window.onload = () => addAnimationToTexts();
+
+// Adding Event Listener On Changing Slides Of Main Slider Which Calls  'addAnimationToTexts' Function
 mainSwiper.on('slideChange', () => addAnimationToTexts())
 
 // Adding Event Listener On Each Next Slide Button That Listens To Click And Slides Main Swiper To Next Slide Of Current slide
