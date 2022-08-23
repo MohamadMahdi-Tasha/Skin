@@ -22,6 +22,8 @@ body {
     background-color: #f1ecec !important;
 }
 
+.w-25,.w-50,.w-75 {outline: 2px solid red;}
+
 /*Styles*/
 .dv-fw-bold {font-weight: 700;}
 .dv-fw-semi-bold {font-weight: 600;}
