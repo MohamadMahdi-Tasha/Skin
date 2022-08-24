@@ -110,8 +110,8 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-contact-us-page-3 {background-image: url('../img/contact-us/img-bg-3.png');}
 .dv-text-red {color: var(--red);}
 .dv-bg-right-bigger {background-size: 120%;background-position: right bottom;}
-.dv-about-us-map-slide {background-image: url('../img/img-map.jpg');}
 .swiper-wrapper > .swiper-slide {background-color: var(--light);}
+.pointer-events-none {pointer-events: none !important}
 
 .dv-link {
     font-weight: 500;
