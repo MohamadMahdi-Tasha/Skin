@@ -98,6 +98,7 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-conditions-slide-2-bottom-items-holder > div:last-of-type {background-image: url('../img/hair-cat/slide-2/img-3.png');}
 .dv-each-conditions-slide-2 {background-image: url('../img/each-condition/img-bg-2.png');}
 .dv-about-us-slide-1 {background-image: url('../img/about-us/img-bg-1.png');}
+.dv-about-us-slide-1 {background-size: 60%;background-repeat: no-repeat;background-position: right bottom;}
 .dv-about-us-slide-2 > div > div {height: 200px;background-size: cover;}
 .dv-about-us-slide-2 > div > div > div {height: 200px;background: linear-gradient(to bottom, transparent, rgba(0,0,0,.5));}
 .dv-about-us-slide-2 > div:first-of-type > div:first-of-type {background-image: url('../img/about-us/team/img-1.png');}
