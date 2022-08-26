@@ -7,6 +7,7 @@ const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
 const mainSwiper = new Swiper('.main-swiper', {
     mousewheel: true,
     effect: 'creative',
+    initialSlide: 3,
     creativeEffect: {
         prev: {
             // will set `translateZ(-400px)` on previous slides
