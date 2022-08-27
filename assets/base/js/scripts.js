@@ -3,6 +3,7 @@ const toggleBtns = document.querySelectorAll('.dv-toggle-btn');
 const nextSlideBtns = document.querySelectorAll('.dv-next-slide-btn');
 const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
 const accardionItem = document.querySelectorAll('.dv-accardion-item');
+const loader = document.querySelector('.dv-loader');
 
 // Initializing Main Swiper Of Pages
 const mainSwiper = new Swiper('.main-swiper', {
@@ -42,7 +43,10 @@ function addAnimationToTexts() {
 }
 
 // Adding Event Listener On Load Of Window Which Calls  'addAnimationToTexts' Function
-window.onload = () => addAnimationToTexts();
+window.onload = () => {
+    addAnimationToTexts()
+    loader.classList.replace('is-showing', 'was-showing')
+};
 
 // Adding Event Listener On Changing Slides Of Main Slider Which Calls  'addAnimationToTexts' Function
 mainSwiper.on('slideChange', () => addAnimationToTexts())

@@ -123,6 +123,29 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-accardion-item:not(.active) > h6 {margin-bottom: 0 !important;}
 .dv-accardion-item:not(.active) .dv-title {font-size: 20px;}
 .dv-accardion-item.active {height: auto;overflow: visible;}
+.dv-loader, main {transition: .3s}
+.dv-loader.is-showing ~ main {display: none;}
+.dv-loader.was-showing ~ main {display: block;}
+.dv-loader.is-showing {opacity: 1;}
+.dv-loader.was-showing {opacity: 0;}
+.dv-loader-icon {overflow: visible;width: 100px;height: 150px;}
+.dv-loader-icon g {animation: slide 2s linear infinite;}
+.dv-loader-icon g:nth-child(2) {animation-delay: 0.5s;}
+.dv-loader-icon g:nth-child(2) path {
+    animation-delay: 0.5s;
+    stroke-dasharray: 0px 158px;
+    stroke-dashoffset: 1px;
+}
+
+.dv-loader-icon path {
+    stroke: url(#gradient);
+    stroke-width: 20px;
+    stroke-linecap: round;
+    fill: none;
+    stroke-dasharray: 0 157px;
+    stroke-dashoffset: 0;
+    animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+}
 
 .dv-link {
     font-weight: 500;
@@ -228,6 +251,30 @@ form.animate {animation: form-animation .7s linear;}
 @keyframes form-animation { from {opacity: 0;} to {opacity: 1;} }
 @keyframes footer-animation { from {opacity: 0;transform: translateY(100%)} to {opacity: 1;translateY(0)} }
 @keyframes button-animation { from {opacity: 0;transform: scale(0);} to {opacity: 1;transform: scale(1);} }
+
+@keyframes slide {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes escalade {
+    0% {
+        stroke-dasharray: 0 157px;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 157px 157px;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 157px 157px;
+        stroke-dashoffset: -156px;
+    }
+}
 
 /*Media Querys*/
 @media (max-width: 575px) {
