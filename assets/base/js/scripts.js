@@ -2,6 +2,7 @@
 const toggleBtns = document.querySelectorAll('.dv-toggle-btn');
 const nextSlideBtns = document.querySelectorAll('.dv-next-slide-btn');
 const PrevSlideBtns = document.querySelectorAll('.dv-prev-slide-btn');
+const accardionItem = document.querySelectorAll('.dv-accardion-item');
 
 // Initializing Main Swiper Of Pages
 const mainSwiper = new Swiper('.main-swiper', {
@@ -59,5 +60,14 @@ toggleBtns.forEach(item => {
     item.addEventListener('click', () => {
         const target = item.getAttribute('data-toggle-target');
         document.querySelector(target).classList.toggle('show');
+    })
+})
+
+// Adding Event Listener On Each Accordion Item That Listens To Click And First Removes 'active' Class Name From Active Accordion
+// Then Toggles (Checks If Given Element Has Given Class Name, If It Has Then Removes It Otherwise Adds It) 'active' Class Name On Clicked Item.
+accardionItem.forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelector('.dv-accardion-item.active').classList.remove('active');
+        item.classList.toggle('active')
     })
 })

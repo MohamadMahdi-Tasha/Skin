@@ -37,7 +37,7 @@ body {
 .dv-bg-cover {background-size: cover;background-position: center;}
 .dv-bg-cover-right {background-size: cover;background-position: right;}
 .dv-home-slide-1 {background-image: url('../img/home/img-bg-1.png');}
-.dv-home-slide-2 {background-image: url('../img/home/img-bg-2.png');background-size: 100%;background-repeat: no-repeat;}
+.dv-home-slide-2 {background-color: #eae5e5;}
 .dv-home-slide-3 {background-image: url('../img/home/img-bg-3.png');}
 .dv-home-slide-4 {background-image: url('../img/home/img-bg-4.png');}
 .dv-fs-20 {font-size: 20px}
@@ -113,6 +113,16 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-bg-right-bigger {background-size: 120%;background-position: right bottom;}
 .swiper-wrapper > .swiper-slide {background-color: var(--light);}
 .pointer-events-none {pointer-events: none}
+.dv-home-slide-2-accardion-1 {background-image: url('../img/img-woman.png');}
+.dv-home-slide-2-accardion-2 {background-image: url('../img/hair-cat/img-4.png');}
+.dv-home-slide-2-accardion-3 {background-image: url('../img/hair-cat/img-5.png');}
+.dv-home-slide-2-accardion-4 {background-image: url('../img/hair-cat/img-6.png');}
+.dv-accardion-item {transition: .3s;cursor: pointer;background-position: right bottom;background-repeat: no-repeat;background-size: cover;}
+.dv-accardion-item:not(.active) {height: 50px !important;overflow: hidden;}
+.dv-accardion-item:not(.active) > p, .dv-accardion-item > a{display:none;}
+.dv-accardion-item:not(.active) > h6 {margin-bottom: 0 !important;}
+.dv-accardion-item:not(.active) .dv-title {font-size: 20px;}
+.dv-accardion-item.active {height: auto;overflow: visible;}
 
 .dv-link {
     font-weight: 500;
