@@ -124,8 +124,6 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-accardion-item:not(.active) .dv-title {font-size: 20px;}
 .dv-accardion-item.active {height: auto;overflow: visible;}
 .dv-loader, main {transition: .3s}
-.dv-loader.is-showing ~ main {display: none;}
-.dv-loader.was-showing ~ main {display: block;}
 .dv-loader.is-showing {opacity: 1;}
 .dv-loader.was-showing {opacity: 0;}
 .dv-loader-icon {overflow: visible;width: 100px;height: 150px;}
