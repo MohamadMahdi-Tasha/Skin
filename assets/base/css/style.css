@@ -119,7 +119,7 @@ textarea.dv-input {height: 203px;resize: none;}
 .dv-home-slide-2-accardion-4 {background-image: url('../img/hair-cat/img-6.png');}
 .dv-accardion-item {transition: .3s;cursor: pointer;background-position: right bottom;background-repeat: no-repeat;background-size: cover;}
 .dv-accardion-item:not(.active) {height: 50px !important;overflow: hidden;}
-.dv-accardion-item:not(.active) > p, .dv-accardion-item > a{display:none;}
+.dv-accardion-item:not(.active) > p, .dv-accardion-item:not(.active) > a{display:none;}
 .dv-accardion-item:not(.active) > h6 {margin-bottom: 0 !important;}
 .dv-accardion-item:not(.active) .dv-title {font-size: 20px;}
 .dv-accardion-item.active {height: auto;overflow: visible;}
@@ -277,11 +277,6 @@ form.animate {animation: form-animation .7s linear;}
 }
 
 /*Media Querys*/
-@media (max-width: 575px) {
-    .dv-home-slide-2-bottom-items-holder, .dv-hair-cat-slide-2-items-holder > div {grid-template-columns: repeat(1, 1fr) !important}
-    .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 1 !important}
-}
-
 @media (max-width: 991px) {
     main {z-index: 1;}
     nav.show {left: 0;opacity: 1;}
@@ -294,7 +289,6 @@ form.animate {animation: form-animation .7s linear;}
     .dv-fs-60 {font-size: 30px}
     .dv-squar-50  {width: 40px;height: 40px;}
     .dv-label-holder.d-flex {display: none !important;}
-    .dv-home-slide-2-bottom-items-holder.dv-three-child > div:last-of-type {grid-column: span 2}
     .dv-home-slide-2-bottom-items-holder h6 {color: white !important;}
     .dv-mq-991-pos-static.position-absolute {position: static !important;}
     .dv-home-slide-2, .dv-home-slide-3, .dv-home-slide-4, .dv-hair-cat-slide-1,
@@ -311,12 +305,6 @@ form.animate {animation: form-animation .7s linear;}
         display: flex;
         justify-content: space-between;
         text-align: center;
-    }
-
-    .dv-home-slide-2-bottom-items-holder, .dv-conditions-slide-2-bottom-items-holder, .dv-hair-cat-slide-2-items-holder {
-        display: grid !important;
-        grid-template-columns: repeat(2 , 1fr);
-        gap: 1rem;
     }
 
     .dv-home-slide-2-bottom-items-holder > div,.dv-conditions-slide-2-bottom-items-holder > div, .dv-hair-cat-slide-2-items-holder > div {
