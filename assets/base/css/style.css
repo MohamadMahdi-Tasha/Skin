@@ -229,11 +229,11 @@ button.dv-border-white:hover {background-color: white !important;color: var(--da
 .accordion-button:focus {box-shadow: none !important}
 
 /*Animations*/
-.dv-title:not(.animate), .dv-subtitle:not(.animate),
-.dv-paragraph:not(.animate), .dv-label-holder:not(.animate),
-form:not(.animate), footer:not(.animate),
-.dv-prev-slide-btn:not(.animate), .dv-next-slide-btn:not(.animate),
-.dv-link:not(.animate) {opacity: 0;}
+.swiper-wrapper > .swiper-slide:not(:first-of-type) .dv-title:not(.animate), .dv-subtitle:not(.animate),
+.swiper-wrapper > .swiper-slide:not(:first-of-type) .dv-paragraph:not(.animate), .dv-label-holder:not(.animate),
+.swiper-wrapper > .swiper-slide:not(:first-of-type) form:not(.animate), footer:not(.animate),
+.swiper-wrapper > .swiper-slide:not(:first-of-type) .dv-prev-slide-btn:not(.animate), .dv-next-slide-btn:not(.animate),
+.swiper-wrapper > .swiper-slide:not(:first-of-type) .dv-link:not(.animate) {opacity: 0;}
 
 .dv-title.animate {animation: title-animation .5s linear;}
 .dv-subtitle.animate {animation: subtitle-animation .5s linear;}
