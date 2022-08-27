@@ -42,7 +42,8 @@ function addAnimationToTexts() {
     nextAndPrevSlideButtonsInVisibleSlide.forEach(item => item.classList.add('animate'))
 }
 
-// Adding Event Listener On Load Of Window Which Calls  'addAnimationToTexts' Function
+// Adding Event Listener On Load Of Window Which Calls  'addAnimationToTexts' Function And Replaces 'is-showing' Class Name With
+// 'was-showing' Class Name On Loader Of Page
 window.onload = () => {
     addAnimationToTexts()
     loader.classList.replace('is-showing', 'was-showing')
